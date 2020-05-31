@@ -7,7 +7,7 @@ def karatsuba(x,y):
     else:
         n=max(len(str(x)),len(str(y)))
         ndiv2=math.ceil(n/2)
-        a= int(y / 10**(ndiv2)) #in large number this int(y / 10**(ndiv2)) would cause lose in precision 
+        a= x // 10**(ndiv2) #in large number this int(y / 10**(ndiv2)) would cause lose in precision 
         #print(a)
         b= x % 10**(ndiv2)
         #print(b)
